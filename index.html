@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COSC 307 Exam Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#timetable">Exam Timetable</a></li>
+        <li><a href="#form">Exam Details Form</a></li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">Introduction</a>
+          <ul class="nav-links">
+            <li><a href="#timetable">Exam Timetable</a></li>
+            <li><a href="#form">Exam Details Form</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h1>Introduction to Web Application Engineering</h1>
+    </section>
+
+    
+
+
+    <div class="table-container">
+        <table class="styled-table">
+          <thead class="table-nav">
+            <tr>
+                <th>S/N</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+          </thead>
+          <tbody>
+      
+            <tr>
+                <td>1</td>
+                <td>January 1, 2024</td>
+                <td>9:00 AM</td>
+                <td>COSC 307</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                  <td>January 13, 2024</td>
+                  <td>9:00 AM</td>
+                  <td>Gens 102</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                  <td>January 13, 2024</td>
+                  <td>2:00 PM</td>
+                  <td>COSC 407</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                  <td>January 14, 2024</td>
+                  <td>9:00 AM</td>
+                  <td>COSC 411</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                  <td>January 15, 2024</td>
+                  <td>9:00 AM</td>
+                  <td>COSC 401</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                  <td>January 1, 2024</td>
+                  <td>9:00 AM</td>
+                  <td>COSC 403</td>
+                </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+      
+
+    <section id="form"  class="form-container">
+      <h2>Exam Details Form</h2>
+      <form id="examForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Oseni" required><br><br>
+
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber" name="regNumber" placeholder="U22DLC200333" required><br><br>
+
+        <label>Are you ready for the exam?</label><br>
+        <input type="radio" id="readyYes" name="ready" value="yes" required>
+        <label for="readyYes" id="radioLabel">Yes</label>
+        <input type="radio" id="readyNo" name="ready" value="no" required>
+        <label for="readyNo" id="radioLabel">No</label><br><br>
+
+        <label for="examCenter">Select Exam Center:</label>
+        <select id="examCenter" name="examCenter">
+          <option value="Lagos">Lagos</option>
+          <option value="London">London</option>
+          <option value="Zaria">Zaria</option>
+          <option value="Dubai">Dubai</option>
+          <option value="Abuja">Abuja</option>
+        </select><br><br>
+
+        <input type="submit" onclick="clearForm()" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
